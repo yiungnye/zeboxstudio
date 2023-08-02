@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap");
+:root {
+  --cyan: #5FB4A2;
+  --dark-blue: #203A4C;
+  --grayish-dark-blue: #33323D;
+  --very-light-grey: #FAFAFA;
+  --light-grey: #EAEAEB;
+  --grayish-bright-red: #F43030;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grayish-dark-blue);
+}
+
+.logo {
+  height: 32px;
+}
+
+h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 42px;
+  letter-spacing: -0.36 px;
+  color: var(--grayish-dark-blue);
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grayish-dark-blue);
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 32px 40px 32px;
+}
+nav #menuToggle {
+  display: none;
+}
+nav .links {
+  display: block;
+}
+nav .links ul {
+  list-style: none;
+  display: flex;
+}
+nav .links ul li {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grayish-dark-blue);
+}
+nav .links ul li:nth-child(2) {
+  margin-left: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 32px 96px 32px;
+}
+header picture {
+  border-radius: none;
+}
+header picture img {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+}
+header h2 {
+  padding-top: 24px;
+  margin-bottom: 0px;
+}
+header p {
+  margin-bottom: 16px;
+}
+header a {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--dark-blue);
+}
+header a img {
+  margin: 0;
+  padding: 18px 16px;
+  background-color: #1a2f3f;
+}
+header a p {
+  margin: 0 auto;
+  font-size: 12px;
+  color: #FFF;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+
+article, .work {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px 115px 32px;
+}
+article picture img, .work picture img {
+  width: 100%;
+  margin: 0 auto 32px auto;
+}
+article .about, .work .about {
+  border-top: 0.6px solid var(--grayish-dark-blue);
+  border-bottom: 0.6px solid var(--grayish-dark-blue);
+}
+article .about h2, .work .about h2 {
+  padding-top: 32px;
+  margin-bottom: 28px;
+}
+article .about p, .work .about p {
+  margin: 28px 0;
+}
+article .about button:hover, .work .about button:hover {
+  color: white;
+}
+article .about button, .work .about button {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 34px;
+  text-decoration: none;
+  border: 1px solid var(--grayish-dark-blue);
+  color: var(--grayish-dark-blue);
+  background-color: transparent;
+  margin-bottom: 51px;
+}
+
+article button:hover, .work button:hover, main button:hover {
+  background-color: var(--grayish-dark-blue);
+  transition: 0.6s;
+  cursor: pointer;
+}
+article button:hover a, .work button:hover a, main button:hover a {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 115px 32px 80px 32px;
+}
+main h2 {
+  text-align: center;
+  color: var(--grayish-dark-blue);
+  margin-bottom: 40px;
+}
+main a {
+  margin: 0 auto;
+}
+main button {
+  margin: 0 auto;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 34px;
+  text-decoration: none;
+  border: 1px solid var(--grayish-dark-blue);
+  color: var(--grayish-dark-blue);
+  background-color: transparent;
+}
+main button:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grayish-dark-blue);
+}
+footer .content {
+  margin: 56px 0;
+}
+footer .footer-logo {
+  display: block;
+  margin: 0 auto;
+}
+footer ul {
+  margin: 40px 0;
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+footer a {
+  color: white;
+}
+footer ul li:nth-child(2) {
+  margin: 32px 0;
+}
+footer .links {
+  display: flex;
+  justify-content: center;
+}
+footer .links img:first-child {
+  margin-right: 15px;
+}
+footer .links img:last-child {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav, header, .work, article, main {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  nav .links ul li {
+    font-size: 14px;
+  }
+  nav .links ul li:nth-child(2) {
+    margin-left: 42px;
+  }
+  header {
+    position: relative;
+  }
+  header picture {
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1690886360/portfolio/zebox/header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+  header picture img {
+    opacity: 0;
+  }
+  header .content {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    max-width: 458px;
+    padding-right: 32px;
+  }
+  header h2 {
+    padding-top: 56px;
+    margin-bottom: 8px;
+    font-size: clamp(2.5rem, 1.7857rem + 1.4881vw, 3.125rem);
+  }
+  .work {
+    align-items: center;
+  }
+  .work picture {
+    border-radius: 32px;
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1682243517/portfolio/image-homepage-mauzardin_lh2b9h.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .work:nth-child(2) picture {
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1690887319/portfolio/zebox/builwise.jpg);
+  }
+  .social-media-p picture {
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1690951059/portfolio/zebox/instagram_post.png);
+  }
+  .product-photography-p picture {
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1690888302/portfolio/zebox/product_photography.png);
+  }
+  .work .about {
+    max-width: 339px;
+    margin-left: 69px;
+  }
+  article, .work {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .work:nth-child(2),.work:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  article picture {
+    background-image: url(https://res.cloudinary.com/dnt1sw0e4/image/upload/v1690890784/portfolio/zebox/about.png);
+    background-size: cover;
+    background-position-x: 50%;
+    min-width: 281px;
+  }
+  .work picture img, article picture img {
+    opacity: 0;
+    margin-bottom: 0;
+  }
+  article .about {
+    max-width: 339px;
+    margin-left: 69px;
+  }
+  main {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+  main h2 {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  main button {
+    margin: 0;
+  }
+  main a {
+    margin: 0;
+  }
+  footer {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .content {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer-logo {
+    margin: 0 0 0 40px;
+  }
+  footer ul {
+    margin-left: 40px;
+    display: flex;
+  }
+  footer ul li {
+    margin: 0;
+  }
+  footer ul li:nth-child(2) {
+    margin: 0 42px;
+  }
+  footer .links {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1142px) {
+  nav, header, .work, article, main, footer .content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1110px;
+  }
+  article .about, .work .about {
+    margin-right: 69px;
+  }
+  footer .footer-logo {
+    margin-left: 0;
+  }
+  footer .links {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header h2 {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+  }
+}/*# sourceMappingURL=style.css.map */
